@@ -1,0 +1,12 @@
+#leftClick event
+from tkinter import *
+def leftClick(event):
+    print('x轴坐标:',event.x)
+    print('y轴坐标:',event.y)
+    print('相对于屏幕左上角x轴坐标:',event.x_root)
+    print('相对于屏幕左上角y轴坐标:',event.y_root)
+root=Tk()
+lab=Label(root,text='hello')
+lab.pack()
+lab.bind('<Button-1>',leftClick)
+root.mainloop()

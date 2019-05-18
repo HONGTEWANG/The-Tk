@@ -1,0 +1,9 @@
+#tkinter keyPress  event
+from tkinter import *
+def printKey(event):
+    print('你按下了:'+event.char)
+root=Tk()
+entry=Entry(root)
+entry.bind('<KeyPress>',printKey)
+entry.pack()
+root.mainloop()

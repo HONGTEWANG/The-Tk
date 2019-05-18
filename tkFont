@@ -1,0 +1,7 @@
+#Create a tkFont.font programming
+from tkinter import *
+import tkinter.font
+root=Tk()
+ft=tkinter.font.Font(family='fixdsys',size=20,weight='bold')
+Label(root,text='hello sticky',font=ft).grid()
+root.mainloop()
